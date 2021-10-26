@@ -23,3 +23,7 @@ assets/
 upload/
 tmp_cn/
 /application/vendor/
+
+
+.htaccess
+nginx.htaccess
