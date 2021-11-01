@@ -1,0 +1,1 @@
+<?phpnamespace factory;class Meat {    public function __construct(){        echo '这是肉';    }}

@@ -1,0 +1,1 @@
+<?phpclass Singleton{    private static $_instance;    public static function getInstance()    {        if (!self::$_instance instanceof self) {            self::$_instance = new self;        }        return self::$_instance;    }    public function test()    {        echo "这是个测试 \n";    }}$obj = Singleton::getInstance();$obj->test();

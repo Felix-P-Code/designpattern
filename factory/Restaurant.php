@@ -1,10 +1,15 @@
 <?php
+
 namespace factory;
 
-class Restaurant implements Factory{
+
+class Restaurant implements Factory
+{
 
     public function produce($class)
     {
-        // TODO: Implement produce() method.
+        // 这里可以做成反射机制
+        $class = 'factory\\' . $class;
+        return new $class;
     }
 }
